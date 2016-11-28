@@ -13,10 +13,13 @@ var attractionsModule = (function () {
   // ~~~~~~~~~~~~~~~~~~~~~~~
     // These variables are not available until after the AJAX request succeeds in `options.js`. You definitely need to update something here!
   // ~~~~~~~~~~~~~~~~~~~~~~~
+
+  var restaurants = $("#restaurant-choices").children();
+
   var enhanced = {
-    hotels: hotels.map(attractionModule.create),
-    restaurants: restaurants.map(attractionModule.create),
-    activities: activities.map(attractionModule.create),
+    // hotels: hotels.map(attractionModule.create),
+    restaurants: restaurants.map(attractionModule.create)
+    // activities: activities.map(attractionModule.create),
   }
 
   // private helper methods (only available inside the module)
